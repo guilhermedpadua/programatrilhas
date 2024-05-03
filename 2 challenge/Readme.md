@@ -1,7 +1,7 @@
-# Página de Inscrição - Trilhas Inova
+# 2º Desafio - Trilhas Inova
 
 ## Descrição
-Este projeto consiste no Desafio 2 do programa Trilhas Inova. A iniciativa é uma parceria entre o Governo do Estado do Maranhão, a Secti e a Fapema, com o objetivo de capacitar jovens na área de tecnologia.
+Este projeto consiste no 2º Desafio do programa Trilhas Inova. A iniciativa é uma parceria entre o Governo do Estado do Maranhão, a Secti e a Fapema, com o objetivo de capacitar jovens na área de tecnologia.
 
 ## Objetivo
 - Realizar e entregar o estudo e refinamento para desenvolvimento de uma página de inscrição.

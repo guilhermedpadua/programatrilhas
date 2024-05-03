@@ -52,12 +52,14 @@ const tema = document.getElementById('icon');
 
 tema.addEventListener('click', () => {
   const form = document.getElementById('container');
+  const body = document.getElementById('body');
 
   if (tema.classList.contains('fa-moon')) {
     tema.classList.remove('fa-moon');
     tema.classList.add('fa-sun');
 
     form.classList.add('dark');
+    body.classList.add('body-dark');
     return;
   }
 
@@ -65,6 +67,7 @@ tema.addEventListener('click', () => {
   tema.classList.add('fa-moon');
 
   form.classList.remove('dark');
+  body.classList.remove('body-dark');
 });
 
 function resumoInscricao() {

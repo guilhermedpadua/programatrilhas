@@ -10,8 +10,8 @@ Este projeto consiste no Desafio 2 do programa Trilhas Inova. A iniciativa é um
 ## Design
 O design da página de inscrição está disponível nas versões ligth e dark. Abaixo estão as imagens de referência:
 
-### Design Ligado
-![Design Ligado](img/ligth.png)
+### Design Light
+![Design Ligado](img/light.png)
 
 ### Design Dark
 ![Design Dark](img/dark.png)

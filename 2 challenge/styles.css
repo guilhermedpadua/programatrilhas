@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+:root {
+ 
+    --color-light-50: #f8fafc;
+
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+
+    --color-blue-50: #87CEEB;
+    --color-blue-100: #B0E0E6;
+    --color-blue-200: #ADD8E6;
+
+    --color-gradient: linear-gradient(to right, #87CEEB, #4682B4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--color-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 40px;
+    padding: 40px 35px;
+}
+
+.container {
+    max-width: 900px;
+    background-color: var(--color-light-50);
+    padding: 40px 35px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    animation: dark-to-light-background 0.3s ease-in-out;
+}
+
+.container h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 35px;
+    margin-bottom: 43px;
+}
+
+.container #tema {
+    display: block;
+    text-align: end;
+}
+
+.container p {
+    color: var(--color-dark-100);
+}
+
+.container #icon {
+    font-size: 25px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-50 {
+    flex: 100%;
+    flex: 1;
+    margin: 0 20px;
+    min-width: 350px;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.input-100 {
+    flex: 100%;
+    margin: 0 20px;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 25px !important;
+}
+
+.input-50 input,
+.input-100 textarea {
+    width: 100%;
+    padding: 15px;
+    padding-top: 20px;
+    background-color: #E9E9ED;
+}
+
+.input-50 span,
+.input-100 span {
+    position: absolute;
+    left: 10px;
+    top: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: .5;
+}
+
+
+.input-100 span {
+    left: 25px;
+}
+
+.input-50 input:focus~span,
+.input-50 input:valid~span {
+    transform: translateY(-13px);
+    opacity: 1;
+    color: #87CEEB !important;
+    font-size: 12px;
+}
+
+.input-100 textarea:focus~span  {
+    transform: translateY(-13px);
+    opacity: 1;
+    color: #87CEEB;
+    font-size: 12px;
+}
+.input-100 textarea:valid:not(:placeholder-shown)~span {
+    transform: translateY(-13px);
+    opacity: 1;
+    color: #87CEEB;
+    font-size: 12px;
+}
+
+
+.input-50:focus-within,
+.input-100:focus-within {
+    border: 1px solid #87CEEB;
+}
+
+
+
+
+
+
+input[type="file"] {
+    background-color: #E9E9ED;
+    display: none;
+}
+
+label {
+    background-color: #E9E9ED;
+    width: 100%;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+#resumo a, p {
+    color: var(--color-dark-50);
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    flex: 1;
+    cursor: pointer;
+    position: relative;
+    padding: 0.5em;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.select {
+    position: relative;
+    display: flex;
+    line-height: 3;
+    overflow: hidden;
+}
+
+.select::after {
+    content: '\25BC';
+    color: #87CEEB;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.botao {
+    margin: 20px 20px 0 0;
+    text-align: end
+}
+
+.button {
+    width: 150px;
+    color: white;
+    background: var(--color-gradient);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container .sequencia {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 20px 0 20px;
+}
+
+.sequencia a {
+    color: black;
+    font-size: 22px;
+}
+
+/* Dark Mode */
+.dark#container {
+    color: var(--color-light-50);
+    background-color: var(--color-dark-100);
+    animation: light-to-dark-background 0.3s ease-in-out;
+}
+
+.dark#container p {
+    color: var(--color-light-50);
+}
+
+.dark .sequencia a {
+    color: var(--color-light-50);
+}
+
+.dark .dados  {
+    color: var(--color-light-50) !important;
+}
+
+.dark#container span, label {
+    color: var(--color-dark-100)
+}
+
+.dark#resumo a, p {
+    color: var(--color-light-50);
+}

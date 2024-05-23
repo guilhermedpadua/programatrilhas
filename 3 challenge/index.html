@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Guilherme Amorim</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav class="nav-bar">
+        <img src="./img/logo guilherme.svg" alt="" style="width: 50px;">
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item"><a href="#" class="nav-link" onclick="loadContent('home.html')">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" onclick="loadContent('habilidades.html')">Habilidades</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" onclick="loadContent('projetos.html')">Projetos</a></li>
+          </ul>
+        </div>
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()" style="background-color: #312D37;"><img class="icon" src="./img/menu_white_36dp.svg" alt=""></button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="#" class="nav-link" onclick="loadContent('home.html')">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" onclick="loadContent('habilidades.html')">Habilidades</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" onclick="loadContent('projetos.html')">Projetos</a></li>
+        </ul>
+      </div>
+    </header>
+    <main id="main-content">
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Guilherme Amorim. Todos os direitos reservados.</p>
+        <figure>
+          <img src="./img/logo-alura.png" alt="Logo Alura">
+        </figure>
+      </div>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

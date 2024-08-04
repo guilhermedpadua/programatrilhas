@@ -24,15 +24,15 @@ O ExploreMaranhão é um projeto que permite aos visitantes explorar os destinos
 
 ### Página Destino List
 
-![Página Destino List](imagens/destino-list.png)
+![Página Destino List](../5%20challenge/ExploreMaranhão/frontend/src/imagens/destino-list.png)
 
 ### Mapa
 
-![Mapa](imagens/mapa.png)
+![Mapa](../5%20challenge/ExploreMaranhão/frontend/src/imagens/mapa.png)
 
 ### Modal da Lista de Atrativos
 
-![Modal da Lista de Atrativos](imagens/modal-atrativos.png)
+![Modal da Lista de Atrativos](../5%20challenge/ExploreMaranhão/frontend/src/imagens/modal-atrativos.png)
 
 ## Como Rodar o Projeto
 
